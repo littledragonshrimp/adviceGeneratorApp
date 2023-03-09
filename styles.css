@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(218, 23%, 16%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  margin: auto;
+  min-width: 15rem;
+  min-height: 12rem;
+  border-radius: 1rem;
+  border: 2px solid red;
+}
+
+#adviceID {
+  margin: 2rem;
+  color: hsl(150, 100%, 66%);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background-color: inherit;
+}
+
+#adviceText {
+  color: hsl(193, 38%, 86%);
+  background-color: inherit;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.divider::before {
+  position: relative;
+  right: 50%;
+  bottom: 50%;
+  width: 100%;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  height: 4rem;
+  width: 100%;
+  background: url("images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: -20% 10%;
+  z-index: 30;
+}
+
+#reload {
+  position: relative;
+  bottom: -1.5rem;
+  right: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 3rem;
+  border: 2px solid red;
+  cursor: pointer;
+}
+#reload img {
+  z-index: 20;
+  border-radius: 0.2rem;
+  background-color: inherit;
+}
+
+footer {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

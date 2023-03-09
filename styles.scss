@@ -1,0 +1,90 @@
+//Colors
+$LightCyan: hsl(193, 38%, 86%);
+$NeonGreen: hsl(150, 100%, 66%);
+$GrayishBlue: hsl(217, 19%, 38%);
+$DarkGrayishBlue: hsl(217, 19%, 24%);
+$DarkBlue: hsl(218, 23%, 16%);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
+    background-color: $DarkBlue;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.container{
+    background-color: $DarkGrayishBlue;
+    margin: auto;
+    min-width: 15rem;
+    min-height: 12rem;
+    border-radius: 1rem;
+    border: 2px solid red;
+
+}
+
+#adviceID{
+    margin: 2rem;
+    color: $NeonGreen;
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background-color: inherit;
+}
+
+#adviceText{
+    color: $LightCyan;
+    background-color: inherit;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.divider::before{
+    position: relative;
+    right: 50%;
+    bottom: 50%;
+    width: 100%;
+}
+
+//image needs to not be covered 
+.divider::after{ 
+    content: "";
+    position: absolute;
+    height: 4rem;
+    width: 100%;
+    background: url("images/pattern-divider-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: -20% 10%;
+    z-index: 30;
+}
+
+#reload{
+    position: relative;
+    bottom: -1.5rem;
+    right: 0;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: $NeonGreen;
+    border-radius: 3rem;
+    border: 2px solid red;
+    cursor: pointer;
+    img{
+        z-index: 20;
+        border-radius: .2rem;
+        background-color: inherit;
+    }
+
+}
+
+footer{
+    display: none;
+}
