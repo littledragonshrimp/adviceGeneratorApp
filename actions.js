@@ -3,14 +3,6 @@ const baseURL =
 , count : 0
 };
 
-// function GetValue()
-// {
-//     var myarray= new Array("item1","item2","item3");
-//     var random = myarray[Math.floor(Math.random() * myarray.length)];
-//     //alert(random);
-//     document.getElementById("message").innerHTML=random;
-// }
-
 const rollDice        = document.getElementById('reload');
 const adviceNumber    = document.getElementById('id');
 const adviceParagraph = document.getElementById('advice');
