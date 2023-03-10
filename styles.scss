@@ -25,10 +25,11 @@ body{
 .container{
     background-color: $DarkGrayishBlue;
     margin: auto;
-    min-width: 15rem;
+    margin-top: 4rem;
+    min-width: 14rem;
     min-height: 12rem;
-    border-radius: 1rem;
-    border: 2px solid red;
+    border-radius: .5rem;
+
 
 }
 
@@ -48,34 +49,49 @@ body{
     margin-right: 2rem;
 }
 
+.divider1{
+    background-color: inherit;
+    img{
+        background-color: inherit;
+    }
+    margin-top: 1rem;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.divider2{
+    display: none;
+}
+
 .divider::before{
-    position: relative;
-    right: 50%;
-    bottom: 50%;
-    width: 100%;
+    //position: absolute;
+    //width: 100%;
+    //top: 50%;
+    //left: 50%;
+    //transform: translateX(-50%);
 }
 
 //image needs to not be covered 
 .divider::after{ 
-    content: "";
-    position: absolute;
-    height: 4rem;
-    width: 100%;
-    background: url("images/pattern-divider-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: -20% 10%;
-    z-index: 30;
+    // content: "";
+    // position: absolute; 
+    // left: 50%;
+    // top: 50%;
+    // transform: translateX(-50%);
+    // background: url("images/pattern-divider-mobile.svg");
+    // background-repeat: no-repeat;
+    // background-position: -20% 10%;
+    // z-index: 30;
 }
 
 #reload{
     position: relative;
-    bottom: -1.5rem;
-    right: 0;
+    bottom: -1.7rem;
+    right: 0%;
     width: 2.8rem;
     height: 2.8rem;
     background-color: $NeonGreen;
     border-radius: 3rem;
-    border: 2px solid red;
     cursor: pointer;
     img{
         z-index: 20;
@@ -86,5 +102,35 @@ body{
 }
 
 footer{
+    font-size: 15px;
+    margin-top: 6rem;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+   max-width: 8rem;
+   line-height: 1rem;
+   color: $LightCyan;
+   a{
+    font-size: 15px;
+
+   }
+   a:hover{
+    color: $LightCyan;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+.divider1{
     display: none;
+}
+.divider2{
+    display: block;
+    margin-top: 1rem;
+    background-color: inherit;
+    img{
+        background-color: inherit;
+        width: 80%;
+    }
+}
+   
 }

@@ -18,10 +18,10 @@ body {
 .container {
   background-color: hsl(217, 19%, 24%);
   margin: auto;
-  min-width: 15rem;
+  margin-top: 4rem;
+  min-width: 14rem;
   min-height: 12rem;
-  border-radius: 1rem;
-  border: 2px solid red;
+  border-radius: 0.5rem;
 }
 
 #adviceID {
@@ -40,33 +40,28 @@ body {
   margin-right: 2rem;
 }
 
-.divider::before {
-  position: relative;
-  right: 50%;
-  bottom: 50%;
-  width: 100%;
+.divider1 {
+  background-color: inherit;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.divider1 img {
+  background-color: inherit;
 }
 
-.divider::after {
-  content: "";
-  position: absolute;
-  height: 4rem;
-  width: 100%;
-  background: url("images/pattern-divider-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: -20% 10%;
-  z-index: 30;
+.divider2 {
+  display: none;
 }
 
 #reload {
   position: relative;
-  bottom: -1.5rem;
-  right: 0;
+  bottom: -1.7rem;
+  right: 0%;
   width: 2.8rem;
   height: 2.8rem;
   background-color: hsl(150, 100%, 66%);
   border-radius: 3rem;
-  border: 2px solid red;
   cursor: pointer;
 }
 #reload img {
@@ -76,5 +71,33 @@ body {
 }
 
 footer {
-  display: none;
+  font-size: 15px;
+  margin-top: 6rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  max-width: 8rem;
+  line-height: 1rem;
+  color: hsl(193, 38%, 86%);
+}
+footer a {
+  font-size: 15px;
+}
+footer a:hover {
+  color: hsl(193, 38%, 86%);
+}
+
+@media screen and (min-width: 1000px) {
+  .divider1 {
+    display: none;
+  }
+  .divider2 {
+    display: block;
+    margin-top: 1rem;
+    background-color: inherit;
+  }
+  .divider2 img {
+    background-color: inherit;
+    width: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */
