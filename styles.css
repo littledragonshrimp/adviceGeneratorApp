@@ -62,12 +62,17 @@ body {
   height: 2.8rem;
   background-color: hsl(150, 100%, 66%);
   border-radius: 3rem;
+  border: none;
   cursor: pointer;
 }
 #reload img {
   z-index: 20;
   border-radius: 0.2rem;
   background-color: inherit;
+}
+
+#reload:hover {
+  box-shadow: inset 0 0 100px 100px hsla(150, 100%, 66%, 0.2);
 }
 
 footer {
